@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name="io.flutter.embedding.android.FlutterActivity"
+        <activity
+            android:name=".FlutterViewActivity"
+            android:label="@string/title_activity_flutter_view"
+            android:theme="@style/Theme.MyApplication.NoActionBar"></activity>
+        <activity
+            android:name="io.flutter.embedding.android.FlutterActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|layoutDirection"
-    android:hardwareAccelerated="true"
-            />
+            android:hardwareAccelerated="true" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
