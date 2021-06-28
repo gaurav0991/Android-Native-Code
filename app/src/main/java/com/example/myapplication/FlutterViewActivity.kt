@@ -48,11 +48,9 @@ class FlutterViewActivity : AppCompatActivity() {
                 print("YES")
                 Log.d("TAG","YES")
                 Log.d("TAG", res)
-                val intent = Intent()
+                val intent = Intent(this@FlutterViewActivity,MainActivity::class.java)
                 intent.putExtra("result", res)
-                setResult(Activity.RESULT_OK, intent)
-                finish()
-
+                startActivity(intent)
 
             } else {
                 print("NO-")

@@ -35,7 +35,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val button = findViewById<Button>(R.id.button)
-
+        val profileName=intent.getStringExtra("result")
+        if(profileName!=null){
+            Log.d("TEST",profileName)
+        }
 
         button.setOnClickListener {
             FlutterViewActivity.startActivity(this);
